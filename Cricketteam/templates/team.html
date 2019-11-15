@@ -1,0 +1,85 @@
+{% load staticfiles %}
+<html>
+<body>
+{% for i in palyers %}
+    {% if i == "bat" %}
+        <table align="center" border="0" style="background-color: antiquewhite">
+            <tr>
+                <td align="center">
+                    <img src="{% static 'images/Rohit.jpeg' %}" width="100" height="100"><br/>
+                    <span style="color: blue">Rohit Sharma</span>
+                </td>
+                <td align="center">
+                    <img src="{% static 'images/Dhawan.jpeg' %}"width="100" height="100"><br/>
+                    <span style="color: blue">Shikar Dhawan</span>
+                </td>
+                <td align="center">
+                    <img src="{% static 'images/Kholi.jpeg' %}"width="100" height="100"><br/>
+                    <span style="color:blue;">Virat Kohli</span>
+                </td>
+                <td align="center">
+                    <img src="{% static 'images/Rahane.jpeg' %}"width="100" height="100"><br/>
+                    <span style="color: blue">Rahane</span>
+                </td>
+            </tr>
+            <tr><th colspan="4" style="color: darkblue"><br><br>
+            BATSMAN
+            </th></tr>
+        </table>
+    {% elif i == 'bowl' %}
+        <table align="center" border="0" style="background-color: antiquewhite">
+            <tr>
+                <td align="center">
+                    <img src="{% static 'images/Bhuvvneshar.jpeg' %}"width="100" height="100"><br/>
+                    <span style="color: blue">Bhuvneshwer Kumar</span>
+                </td>
+                <td align="center">
+                    <img src="{% static 'images/Bumrah.jpeg' %}"width="100" height="100"><br/>
+                    <span style="color: blue ;">Bumrah</span>
+                </td>
+                <td align="center">
+                    <img src="{% static 'images/Chahal.jpeg' %}"width="100" height="100"><br/>
+                    <span style="color: blue">Chahal</span>
+                </td>
+                <td align="center">
+                    <img src="{% static 'images/Kuldeep.jpeg' %}"width="100" height="100"><br/>
+                    <span style="color: blue">Kuldeep yadav</span>
+                </td>
+            </tr>
+            <tr><th colspan="4" style="color: darkblue"><br><br>
+                BOWLERS
+            </th></tr>
+        </table>
+    {% elif i == 'all' %}
+        <table align="center" border="0" style="background-color: antiquewhite">
+            <tr>
+              <td align="center">
+                    <img src="{% static 'images/Jadeja.jpeg' %}"width="100" height="100"><br/>
+                    <span style="color: blue">Jadeja</span>
+                </td>
+                <td align="center">
+                    <img src="{% static 'images/Hardhic.jpeg' %}"width="100" height="100"><br/>
+                    <span style="color: blue">Hardik pandya</span>
+                </td>
+            </tr>
+            <tr><th colspan="2" style="color: darkblue"><br><br>
+                ALLROUNDERS
+            </th></tr>
+        </table>
+    {% else %}
+        <table align="center" border="0" style="background-color: antiquewhite">
+            <tr>
+                <td align="center">
+                    <img src="{% static 'images/Dhoni.jpeg' %}"width="100" height="100"><br/>
+                    <span style="color:blue;">MS DHONI</span>
+                </td>
+            </tr>
+            <tr><th style="color: darkblue"><br><br>
+                WICKET KEEPER (Captain)
+            </th></tr>
+        </table>
+    {% endif %}
+{% endfor %}
+</table>
+</body>
+</html>
